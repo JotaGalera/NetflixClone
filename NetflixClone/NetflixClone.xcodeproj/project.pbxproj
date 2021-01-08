@@ -34,6 +34,8 @@
 		35E8885525A88ED70052B677 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8885025A88DCC0052B677 /* TopMoviePreview.swift */; };
 		35E8885A25A89DDA0052B677 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8885925A89DDA0052B677 /* SmallVerticalButton.swift */; };
 		35E8885E25A89F900052B677 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8885925A89DDA0052B677 /* SmallVerticalButton.swift */; };
+		35E8886325A8A8DE0052B677 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8886225A8A8DE0052B677 /* WhiteButton.swift */; };
+		35E8886725A8A99C0052B677 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8886225A8A8DE0052B677 /* WhiteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,7 @@
 		3584B30225A87D7000CFB1BF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		35E8885025A88DCC0052B677 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		35E8885925A89DDA0052B677 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		35E8886225A8A8DE0052B677 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,7 @@
 				3584B30225A87D7000CFB1BF /* HomeViewModel.swift */,
 				35E8885025A88DCC0052B677 /* TopMoviePreview.swift */,
 				35E8885925A89DDA0052B677 /* SmallVerticalButton.swift */,
+				35E8886225A8A8DE0052B677 /* WhiteButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,6 +295,7 @@
 				3584B2E725A87A1D00CFB1BF /* Movie.swift in Sources */,
 				3584B2CF25A875C500CFB1BF /* HomeView.swift in Sources */,
 				35E8885E25A89F900052B677 /* SmallVerticalButton.swift in Sources */,
+				35E8886725A8A99C0052B677 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,7 @@
 				3584B2E825A87A1D00CFB1BF /* Movie.swift in Sources */,
 				3584B2D025A875C500CFB1BF /* HomeView.swift in Sources */,
 				35E8885A25A89DDA0052B677 /* SmallVerticalButton.swift in Sources */,
+				35E8886325A8A8DE0052B677 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
