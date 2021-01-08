@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		3584B2BB25A873F700CFB1BF /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584B28225A870D000CFB1BF /* NetflixCloneApp.swift */; };
 		3584B2BE25A873F700CFB1BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3584B28925A870D100CFB1BF /* Preview Assets.xcassets */; };
 		3584B2BF25A873F700CFB1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3584B28625A870D100CFB1BF /* Assets.xcassets */; };
+		3584B2CF25A875C500CFB1BF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584B2CE25A875C500CFB1BF /* HomeView.swift */; };
+		3584B2D025A875C500CFB1BF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584B2CE25A875C500CFB1BF /* HomeView.swift */; };
+		3584B2E225A8792C00CFB1BF /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3584B2E125A8792C00CFB1BF /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,7 @@
 		3584B2A025A8738300CFB1BF /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = iOS.plist; path = /Users/javier.galera/Desktop/NetflixClone/NetflixClone/iOS.plist; sourceTree = "<absolute>"; };
 		3584B2C325A873F700CFB1BF /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3584B2C425A873F700CFB1BF /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = macOS.plist; path = /Users/javier.galera/Desktop/NetflixClone/NetflixClone/macOS.plist; sourceTree = "<absolute>"; };
+		3584B2CE25A875C500CFB1BF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Shared/HomeView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3584B2E225A8792C00CFB1BF /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +67,7 @@
 		3584B27625A870D000CFB1BF = {
 			isa = PBXGroup;
 			children = (
-				3584B28125A870D000CFB1BF /* NetflixClone */,
+				3584B28125A870D000CFB1BF /* Shared */,
 				3584B2A525A8739F00CFB1BF /* iOS */,
 				3584B2B525A873E100CFB1BF /* macOS */,
 				3584B28025A870D000CFB1BF /* Products */,
@@ -79,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3584B28125A870D000CFB1BF /* NetflixClone */ = {
+		3584B28125A870D000CFB1BF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				3584B28225A870D000CFB1BF /* NetflixCloneApp.swift */,
@@ -88,7 +93,7 @@
 				3584B28B25A870D100CFB1BF /* Info.plist */,
 				3584B28825A870D100CFB1BF /* Preview Content */,
 			);
-			path = NetflixClone;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		3584B28825A870D100CFB1BF /* Preview Content */ = {
@@ -102,6 +107,7 @@
 		3584B2A525A8739F00CFB1BF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3584B2CE25A875C500CFB1BF /* HomeView.swift */,
 				3584B2A025A8738300CFB1BF /* iOS.plist */,
 			);
 			path = iOS;
@@ -131,6 +137,9 @@
 			dependencies = (
 			);
 			name = NetflixClone;
+			packageProductDependencies = (
+				3584B2E125A8792C00CFB1BF /* KingfisherSwiftUI */,
+			);
 			productName = NetflixClone;
 			productReference = 3584B27F25A870D000CFB1BF /* NetflixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +201,9 @@
 				Base,
 			);
 			mainGroup = 3584B27625A870D000CFB1BF;
+			packageReferences = (
+				3584B2E025A8792C00CFB1BF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3584B28025A870D000CFB1BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +252,7 @@
 			files = (
 				3584B28525A870D000CFB1BF /* ContentView.swift in Sources */,
 				3584B28325A870D000CFB1BF /* NetflixCloneApp.swift in Sources */,
+				3584B2CF25A875C500CFB1BF /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +262,7 @@
 			files = (
 				3584B29625A8738300CFB1BF /* ContentView.swift in Sources */,
 				3584B29725A8738300CFB1BF /* NetflixCloneApp.swift in Sources */,
+				3584B2D025A875C500CFB1BF /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,10 +400,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NetflixClone/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = K88A5H84VS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NetflixClone/Info.plist;
+				INFOPLIST_FILE = Shared/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,10 +422,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NetflixClone/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = K88A5H84VS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NetflixClone/Info.plist;
+				INFOPLIST_FILE = Shared/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,6 +566,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3584B2E025A8792C00CFB1BF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 5.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3584B2E125A8792C00CFB1BF /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3584B2E025A8792C00CFB1BF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3584B27725A870D000CFB1BF /* Project object */;
 }
