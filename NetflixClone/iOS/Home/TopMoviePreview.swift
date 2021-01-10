@@ -49,7 +49,11 @@ struct TopMoviePreview: View {
                     Spacer()
                 }
             }
-        }.foregroundColor(.white)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.99
+            )]), startPoint: .top, endPoint: .bottom))
+            .padding(.top, 50)
+        }
+        .foregroundColor(.white)
     }
     
     func isCategoryLast(_ category: String) -> Bool {
