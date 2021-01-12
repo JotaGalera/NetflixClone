@@ -30,7 +30,7 @@ struct TopMoviePreview: View {
                                 .font(.system(size: 3))
                         }
                     }
-                }
+                }.padding(.bottom, 5)
                 
                 HStack {
                     Spacer()
