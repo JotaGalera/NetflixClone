@@ -42,9 +42,34 @@ struct MovieDetails: View {
                                 .bold()
                         }
                         
+                        PlayButton(text: "Play", imageName: "", backgroundColor: .red) {
+                            //
+                        }
+                        
+                        CurrentEpisodeInformation(movie: movie)
+                        
+                        CastInfo(movie: movie)
+                        
+                        HStack(spacing: 60) {
+                            SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true){
+                                //
+                            }
+                            
+                            SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true){
+                                //
+                            }
+                            
+                            SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true){
+                                //
+                            }
+                            
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
+                        
                     }
+                    .padding(.horizontal, 10)
                 }
-                
                 Spacer()
             }
             .foregroundColor(.white)
@@ -111,5 +136,49 @@ struct HDLogoView: View {
                 .font(.system(size: 14))
                 .bold()
         }.frame(width: 30, height: 20)
+    }
+}
+
+struct CurrentEpisodeInformation: View {
+    var movie: Movie
+    
+    var body: some View {
+        Group {
+            HStack {
+                Text(movie.episodeInfoDisplay)
+                    .bold()
+                Spacer()
+            }
+            .padding(.vertical, 4.0)
+            
+            HStack {
+                Text(movie.episodeDescriptionDisplay)
+                    .font(.subheadline)
+            }
+        }
+    }
+}
+
+struct CastInfo: View {
+    var movie: Movie
+    
+    var body: some View {
+        VStack(spacing: 3) {
+            HStack {
+                Text ("Cast: \(movie.cast)")
+                
+                Spacer()
+            }
+            
+            HStack {
+                Text ("Creators: \(movie.creator)")
+                
+                Spacer()
+            }
+            
+        }
+        .font(.caption)
+        .foregroundColor(Color("lightGray"))
+        .padding(.vertical, 10)
     }
 }

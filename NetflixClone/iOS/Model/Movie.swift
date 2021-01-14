@@ -14,10 +14,17 @@ struct Movie: Identifiable {
     
     var categories: [String]
     
-    //MovieDetail View
+    // MovieDetail View
     var year: Int
     var rating: String
     var numberOfSeason: Int?
+    
+    // Personalization
+    var currentEpisode: CurrentEpisodeInfo?
+    
+    var defaultEpisodeInfo: CurrentEpisodeInfo
+    var creator: String
+    var cast: String
     
     var episodes: [Episode]?
     
@@ -27,4 +34,25 @@ struct Movie: Identifiable {
         guard let num = numberOfSeason else { return "" }
         return num == 1 ? "1 season" : "\(num) seasons"
     }
+    
+    var episodeInfoDisplay: String {
+        guard let current = currentEpisode else {
+            return "S\(defaultEpisodeInfo.season):E\(defaultEpisodeInfo.episodeName)"
+        }
+        return "S\(current.season):E\(current.episodeName)"
+    }
+    
+    var episodeDescriptionDisplay: String {
+        guard let current = currentEpisode else {
+            return defaultEpisodeInfo.description
+        }
+        return current.description
+    }
+}
+
+struct CurrentEpisodeInfo: Hashable, Equatable {
+    var episodeName: String
+    var description: String
+    var season: Int
+    var episode: Int
 }
