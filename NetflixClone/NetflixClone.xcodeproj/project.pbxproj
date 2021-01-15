@@ -42,8 +42,6 @@
 		895D876825AE494100B1BC8F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D876025AE48F600B1BC8F /* Extensions.swift */; };
 		895D876D25AE4CFA00B1BC8F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D876C25AE4CFA00B1BC8F /* Episode.swift */; };
 		895D877125AE4D8600B1BC8F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D876C25AE4CFA00B1BC8F /* Episode.swift */; };
-		89AAC32E25B0FA14003245FE /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7661225B0F3FE00418A7D /* CustomTabSwitcher.swift */; };
-		89AAC32F25B0FA15003245FE /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7661225B0F3FE00418A7D /* CustomTabSwitcher.swift */; };
 		89AAC34025B0FD61003245FE /* CustomTabSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAC33F25B0FD61003245FE /* CustomTabSwitch.swift */; };
 		89AAC34425B0FD96003245FE /* CustomTabSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAC33F25B0FD61003245FE /* CustomTabSwitch.swift */; };
 /* End PBXBuildFile section */
@@ -70,7 +68,6 @@
 		8904670925AE45B7005CE073 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		895D876025AE48F600B1BC8F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		895D876C25AE4CFA00B1BC8F /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		89A7661225B0F3FE00418A7D /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		89AAC33F25B0FD61003245FE /* CustomTabSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				8904670925AE45B7005CE073 /* MovieDetails.swift */,
-				89A7661225B0F3FE00418A7D /* CustomTabSwitcher.swift */,
 				89AAC33F25B0FD61003245FE /* CustomTabSwitch.swift */,
 			);
 			path = Details;
@@ -355,7 +351,6 @@
 				35E8885525A88ED70052B677 /* TopMoviePreview.swift in Sources */,
 				895D877125AE4D8600B1BC8F /* Episode.swift in Sources */,
 				895D876825AE494100B1BC8F /* Extensions.swift in Sources */,
-				89AAC32F25B0FA15003245FE /* CustomTabSwitcher.swift in Sources */,
 				3584B2E725A87A1D00CFB1BF /* Movie.swift in Sources */,
 				3584B2CF25A875C500CFB1BF /* HomeView.swift in Sources */,
 				35E8885E25A89F900052B677 /* SmallVerticalButton.swift in Sources */,
@@ -377,7 +372,6 @@
 				35E8885125A88DCC0052B677 /* TopMoviePreview.swift in Sources */,
 				895D876D25AE4CFA00B1BC8F /* Episode.swift in Sources */,
 				895D876125AE48F600B1BC8F /* Extensions.swift in Sources */,
-				89AAC32E25B0FA14003245FE /* CustomTabSwitcher.swift in Sources */,
 				3584B2E825A87A1D00CFB1BF /* Movie.swift in Sources */,
 				3584B2D025A875C500CFB1BF /* HomeView.swift in Sources */,
 				35E8885A25A89DDA0052B677 /* SmallVerticalButton.swift in Sources */,

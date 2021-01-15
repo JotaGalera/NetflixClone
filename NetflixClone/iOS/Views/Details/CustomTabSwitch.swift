@@ -10,6 +10,11 @@ import SwiftUI
 struct CustomTabSwitch: View {
     var tabs: [CustomTab] = [.episodes, .trailers, .more]
     
+    func widthForTab(_ tab: CustomTab) -> CGFloat {
+        let string = tab.rawValue
+        return string.widthOfString(usingFont: .systemFont(ofSize: 16, weight: .bold))
+    }
+    
     var body: some View {
         VStack{
             ScrollView(.horizontal, showsIndicators: false){
@@ -18,7 +23,7 @@ struct CustomTabSwitch: View {
                     ForEach(tabs, id: \.self) { tab in
                         VStack {
                             Rectangle()
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 6)
+                                .frame(width: widthForTab(tab), height: 6)
                         
                         
                             Button(action: {
@@ -50,5 +55,13 @@ struct CustomTabSwitch_Previews: PreviewProvider {
             CustomTabSwitch()
             
         }
+    }
+}
+
+extension String {
+    func widthOfString(usingFont font: UIFont) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
     }
 }

@@ -67,6 +67,8 @@ struct MovieDetails: View {
                         }
                         .padding(.leading, 20)
                         
+                        CustomTabSwitch()
+                        
                     }
                     .padding(.horizontal, 10)
                 }
