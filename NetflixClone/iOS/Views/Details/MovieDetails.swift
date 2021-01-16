@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MovieDetails: View {
+    @State private var showSeasonPicker = false
+    @State private var selectedSeason = 1
+    
     var movie: Movie
     
     let screen = UIScreen.main.bounds
