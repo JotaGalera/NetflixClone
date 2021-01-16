@@ -14,6 +14,9 @@ struct CustomTabSwitch: View {
     var tabs: [CustomTab] = [.episodes, .trailers, .more]
     var movie: Movie
     
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
+
     var body: some View {
         VStack{
             ScrollView(.horizontal, showsIndicators: false){
@@ -40,7 +43,7 @@ struct CustomTabSwitch: View {
             
             switch currentTab {
             case .episodes:
-                Text("EPISODES")
+                EpisodesView(episodes: movie.episodes ?? [], showSeasonsPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
             case .trailers:
                 TrailerList(trailers: movie.trailers)
             case .more:
@@ -74,16 +77,10 @@ struct CustomTabSwitch_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
-            CustomTabSwitch(movie: exampleMovie1)
+            CustomTabSwitch(movie: exampleMovie1,
+                            showSeasonPicker: .constant(false),
+                            selectedSeason: .constant(1))
             
         }
-    }
-}
-
-extension String {
-    func widthOfString(usingFont font: UIFont) -> CGFloat {
-        let fontAttributes = [NSAttributedString.Key.font: font]
-        let size = self.size(withAttributes: fontAttributes)
-        return size.width
     }
 }
