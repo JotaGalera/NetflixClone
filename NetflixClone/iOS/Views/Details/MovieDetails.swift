@@ -11,6 +11,8 @@ struct MovieDetails: View {
     @State private var showSeasonPicker = false
     @State private var selectedSeason = 1
     
+    @Binding var movieDetailToShow: Movie?
+    
     var movie: Movie
     
     let screen = UIScreen.main.bounds
@@ -25,7 +27,7 @@ struct MovieDetails: View {
                         Spacer()
                         
                         Button(action: {
-                            //
+                            movieDetailToShow = nil
                         }, label: {
                             Image(systemName: "xmark.circle")
                                 .font(.system(size: 20))
@@ -123,7 +125,7 @@ struct MovieDetails: View {
 
 struct MovieDetails_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetails(movie: exampleMovie2)
+        MovieDetails(movieDetailToShow: .constant(nil), movie: exampleMovie1)
     }
 }
 

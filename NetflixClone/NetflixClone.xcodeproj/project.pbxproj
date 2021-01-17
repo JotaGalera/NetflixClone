@@ -163,7 +163,6 @@
 				8904670725AE457E005CE073 /* Helper */,
 				8904670325AE4552005CE073 /* Model */,
 				3584B2A025A8738300CFB1BF /* iOS.plist */,
-				3584B2F525A87A9600CFB1BF /* StandardHomeMovie.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -179,6 +178,7 @@
 		3584B30125A87D6400CFB1BF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3584B2F525A87A9600CFB1BF /* StandardHomeMovie.swift */,
 				3584B2CE25A875C500CFB1BF /* HomeView.swift */,
 				3584B30225A87D7000CFB1BF /* HomeViewModel.swift */,
 				35E8885025A88DCC0052B677 /* TopMoviePreview.swift */,
