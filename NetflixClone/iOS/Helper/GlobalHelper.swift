@@ -90,7 +90,7 @@ let exampleMovie2 = Movie(id: UUID().uuidString, name: "Travelers",
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: exampleEpisodes,
+                          
                           promotionalHeadling: "Best Rated Show",
                           trailers: exampleTrailers)
 let exampleMovie3 = Movie(id: UUID().uuidString,
@@ -102,7 +102,7 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: exampleEpisodes,
+                          
                           trailers: exampleTrailers)
 let exampleMovie4 = Movie(id: UUID().uuidString, name: "Alone",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
@@ -113,7 +113,7 @@ let exampleMovie4 = Movie(id: UUID().uuidString, name: "Alone",
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: exampleEpisodes,
+                          
                           promotionalHeadling: "New episodes coming soon",
                           trailers: exampleTrailers)
 let exampleMovie5 = Movie(id: UUID().uuidString,
@@ -127,7 +127,7 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: exampleEpisodes,
+                          
                           trailers: exampleTrailers)
 let exampleMovie6 = Movie(id: UUID().uuidString,
                           name: "After Life",
@@ -140,7 +140,7 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: exampleEpisodes,
+                          
                           promotionalHeadling: "Watch Season 6 Now",
                           trailers: exampleTrailers)
 
@@ -152,7 +152,7 @@ let exampleMovie7 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisode1, creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          episodes: exampleEpisodes,
+                         
                           trailers: exampleTrailers)
 
 let exampleEpisode1 = CurrentEpisodeInfo(episodeName: "First Episode", description: "In the aftermath of a child's disappearance, Dark follows characters from the fictional German town of Winden as they pursue the truth. They follow connections between four estranged families to unravel a sinister time travel conspiracy which spans several generations.", season: 1, episode: 1)

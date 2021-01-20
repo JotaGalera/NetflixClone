@@ -17,8 +17,19 @@ class HomeViewModel: ObservableObject {
         setupMovies()
     }
     
-    func getMovie(forCat cat: String) -> [Movie] {
-        return movies[cat] ?? []
+    func getMovie(forCat cat: String, andHomeRow homeRow: HomeTopRow) -> [Movie] {
+        
+        
+        switch homeRow {
+        case .home:
+            return movies[cat] ?? []
+        case .movies:
+            return (movies[cat] ?? []).filter({ $0.movieType == .movie })
+        case .tvShows:
+            return (movies[cat] ?? []).filter({ $0.movieType == .tvShow })
+        case .myList:
+            return movies[cat] ?? []
+        }
     }
     
     func setupMovies() {
