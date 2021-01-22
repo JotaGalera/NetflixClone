@@ -173,7 +173,7 @@ struct HDLogoView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(Color("darkGray"))
+                .foregroundColor(Color.customDarkGray)
                 .border(Color.gray, width: 2.0)
                 .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
             
@@ -224,7 +224,7 @@ struct CastInfo: View {
             
         }
         .font(.caption)
-        .foregroundColor(Color("lightGray"))
+        .foregroundColor(Color.customGray)
         .padding(.vertical, 10)
     }
 }

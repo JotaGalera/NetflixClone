@@ -19,3 +19,8 @@ extension String {
         return size.width
     }
 }
+
+extension Color {
+    static let customGray = Color("lightGray")
+    static let customDarkGray = Color("darkGray")
+}
