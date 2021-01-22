@@ -48,10 +48,11 @@ struct TopMoviePreview: View {
                     }
                     Spacer()
                 }
+                .padding(.vertical, 14)
             }
             .background(LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.99
             )]), startPoint: .top, endPoint: .bottom))
-            .padding(.top, 50)
+            
         }
         .foregroundColor(.white)
     }
