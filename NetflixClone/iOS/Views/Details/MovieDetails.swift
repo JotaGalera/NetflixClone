@@ -38,8 +38,7 @@ struct MovieDetails: View {
                         VStack {
                             
                             StandardHomeMovie(movie: movie)
-                                .frame(width: UIScreen.screenWidth/2.5)
-                                .clipped()
+                                .frame(width: screen.width / 2.5, height: 200)
                             
                             MovieInfoSubheadline(movie: movie)
                             
