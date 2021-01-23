@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct SearchBarView: View {
-    @State private var text: String = ""
+    @Binding var text: String
+    
+    @State private var isEditing: Bool = true
+    
+    @Binding var isLoading: Bool
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -22,29 +26,52 @@ struct SearchBarView: View {
                     .padding(.leading, 10)
                 
                 TextField("Search", text: $text)
+                    .padding(7)
+                    .padding(.leading, -7)
+                    .padding(.horizontal, 10)
                     .background(Color.customDarkGray)
                     .cornerRadius(8.0)
                     .foregroundColor(.white)
-                    .padding(7)
-                    .padding(.leading, -7)
+                    .onTapGesture {
+                        isEditing = true
+                    }
                 
-                Button(action: {
-                    //
-                }, label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.customGray)
+                if !text.isEmpty {
+                    if isLoading {
+                        Button(action: {
+                            text = ""
+                        }, label: {
+                            ActivityIndicator(style: .medium, animate: .constant(true))
+                                .configure {
+                                    $0.color = .white
+                                }
+                        })
                         .frame(width:35, height: 35)
-                })
-                .padding(.trailing, 18)
+                        .padding(.trailing, 22)
+                        
+                    } else {
+                        Button(action: {
+                            text = ""
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.customGray)
+                                .frame(width:35, height: 35)
+                        })
+                        .padding(.trailing, 18)
+                    }
+                }
                 
-                Button(action: {
-                    //
-                }, label: {
-                    Text("Cancel")
-                        .foregroundColor(.white)
-                })
-                .padding(.trailing, 10)
-                
+                if isEditing {
+                    Button(action: {
+                        text = ""
+                        isEditing = false
+                        hideKeyboard()
+                    }, label: {
+                        Text("Cancel")
+                            .foregroundColor(.white)
+                    })
+                    .padding(.trailing, 10)
+                }
                 
             }
         }
@@ -55,7 +82,7 @@ struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black.ignoresSafeArea(.all)
-            SearchBarView()
+            SearchBarView(text: .constant(""), isLoading: .constant(false))
                 .padding()
         }
     }

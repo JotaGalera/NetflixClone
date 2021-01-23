@@ -24,3 +24,9 @@ extension Color {
     static let customGray = Color("lightGray")
     static let customDarkGray = Color("darkGray")
 }
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
