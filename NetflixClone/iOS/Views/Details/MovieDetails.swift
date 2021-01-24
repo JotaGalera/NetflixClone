@@ -38,7 +38,7 @@ struct MovieDetails: View {
                         VStack {
                             
                             StandardHomeMovie(movie: movie)
-                                .frame(width: screen.width / 2.5, height: 200)
+                                .frame(width: screen.width / 2.5, height: 300)
                             
                             MovieInfoSubheadline(movie: movie)
                             

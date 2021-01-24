@@ -41,7 +41,18 @@ struct SearchView: View {
                             .bold()
                             .padding(.top, 150)
                     } else if searchVM.viewState == .ready && !searchVM.isShowingPopularMovies {
-                        Text("Ready")
+                        VStack {
+                            HStack {
+                                Text("Movies & TV")
+                                    .bold()
+                                    .font(.title3)
+                                    .padding(.leading, 12)
+                                Spacer()
+                            }
+                            
+                            SearchResultGrid(movies: searchVM.searchResults,
+                                             movieDetailToShow: $movieDetailToShow)
+                        }
                     }
                 }
                 
