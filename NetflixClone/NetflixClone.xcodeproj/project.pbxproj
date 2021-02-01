@@ -78,6 +78,12 @@
 		89E15C7025B1F64F00FA1BAD /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15C6E25B1F64F00FA1BAD /* VideoPreviewImage.swift */; };
 		89E15C7525B1F7EB00FA1BAD /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15C7425B1F7EB00FA1BAD /* TrailerList.swift */; };
 		89E15C7625B1F7EB00FA1BAD /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15C7425B1F7EB00FA1BAD /* TrailerList.swift */; };
+		89F854F025C87CDB0074B735 /* ComingSoonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F854EF25C87CDA0074B735 /* ComingSoonViewModel.swift */; };
+		89F854F425C87D4E0074B735 /* ComingSoonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F854EF25C87CDA0074B735 /* ComingSoonViewModel.swift */; };
+		89F854F925C87E430074B735 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F854F825C87E430074B735 /* TrackableScrollView.swift */; };
+		89F854FD25C87F660074B735 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F854F825C87E430074B735 /* TrackableScrollView.swift */; };
+		89F8550325C88C880074B735 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F8550225C88C880074B735 /* DownloadView.swift */; };
+		89F8550A25C88C8D0074B735 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F8550225C88C880074B735 /* DownloadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +126,9 @@
 		89E15C6425B1F3B600FA1BAD /* SwiftUIVideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideView.swift; sourceTree = "<group>"; };
 		89E15C6E25B1F64F00FA1BAD /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		89E15C7425B1F7EB00FA1BAD /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		89F854EF25C87CDA0074B735 /* ComingSoonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewModel.swift; sourceTree = "<group>"; };
+		89F854F825C87E430074B735 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		89F8550225C88C880074B735 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +274,7 @@
 		8921582D25B0ED9700517309 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				89F8550125C88C750074B735 /* Downloads */,
 				89AF4C3225C200BC00E748B4 /* ComingSoon */,
 				893E932125BB2541004C87D6 /* Search */,
 				89E15C6A25B1F5D300FA1BAD /* VideoPlayer */,
@@ -292,6 +302,8 @@
 				89AF4C2925C2008B00E748B4 /* ComingSoonView.swift */,
 				89AF4C3325C200CD00E748B4 /* NotificationBarView.swift */,
 				894B72E725C2091B002C82F8 /* ComingSoonRow.swift */,
+				89F854EF25C87CDA0074B735 /* ComingSoonViewModel.swift */,
+				89F854F825C87E430074B735 /* TrackableScrollView.swift */,
 			);
 			path = ComingSoon;
 			sourceTree = "<group>";
@@ -303,6 +315,14 @@
 				89E15C6E25B1F64F00FA1BAD /* VideoPreviewImage.swift */,
 			);
 			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		89F8550125C88C750074B735 /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				89F8550225C88C880074B735 /* DownloadView.swift */,
+			);
+			path = Downloads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +456,7 @@
 			files = (
 				89D1554025BCA8D000D84798 /* PopularMovieView.swift in Sources */,
 				89AF4C2E25C2008F00E748B4 /* ComingSoonView.swift in Sources */,
+				89F8550A25C88C8D0074B735 /* DownloadView.swift in Sources */,
 				89E15C6525B1F3B600FA1BAD /* SwiftUIVideView.swift in Sources */,
 				89D1553725BCA1F900D84798 /* GenerateMovies.swift in Sources */,
 				3584B2FC25A87ADA00CFB1BF /* GlobalHelper.swift in Sources */,
@@ -446,6 +467,7 @@
 				89E15C6F25B1F64F00FA1BAD /* VideoPreviewImage.swift in Sources */,
 				89E15C5925B1EC5100FA1BAD /* MoreLikeThis.swift in Sources */,
 				3584B28325A870D000CFB1BF /* NetflixCloneApp.swift in Sources */,
+				89F854FD25C87F660074B735 /* TrackableScrollView.swift in Sources */,
 				3584B2F625A87A9600CFB1BF /* StandardHomeMovie.swift in Sources */,
 				8904671125AE45F5005CE073 /* MovieDetails.swift in Sources */,
 				35E8885525A88ED70052B677 /* TopMoviePreview.swift in Sources */,
@@ -462,6 +484,7 @@
 				35E8886725A8A99C0052B677 /* PlayButton.swift in Sources */,
 				893E932A25BB2569004C87D6 /* SearchBarView.swift in Sources */,
 				89D1552E25BC9DF400D84798 /* SearchViewModel.swift in Sources */,
+				89F854F425C87D4E0074B735 /* ComingSoonViewModel.swift in Sources */,
 				89E15C7525B1F7EB00FA1BAD /* TrailerList.swift in Sources */,
 				89AAC34425B0FD96003245FE /* CustomTabSwitch.swift in Sources */,
 				89BF053025B8CE000061596A /* HomeStack.swift in Sources */,
@@ -474,6 +497,7 @@
 			files = (
 				89D1553C25BCA8BC00D84798 /* PopularMovieView.swift in Sources */,
 				89AF4C2A25C2008B00E748B4 /* ComingSoonView.swift in Sources */,
+				89F8550325C88C880074B735 /* DownloadView.swift in Sources */,
 				89E15C6625B1F3B600FA1BAD /* SwiftUIVideView.swift in Sources */,
 				89D1553325BCA16300D84798 /* GenerateMovies.swift in Sources */,
 				3584B2FD25A87ADA00CFB1BF /* GlobalHelper.swift in Sources */,
@@ -484,6 +508,7 @@
 				89E15C7025B1F64F00FA1BAD /* VideoPreviewImage.swift in Sources */,
 				89E15C5A25B1EC5100FA1BAD /* MoreLikeThis.swift in Sources */,
 				3584B29725A8738300CFB1BF /* NetflixCloneApp.swift in Sources */,
+				89F854F925C87E430074B735 /* TrackableScrollView.swift in Sources */,
 				3584B2F725A87A9600CFB1BF /* StandardHomeMovie.swift in Sources */,
 				8904670A25AE45B7005CE073 /* MovieDetails.swift in Sources */,
 				35E8885125A88DCC0052B677 /* TopMoviePreview.swift in Sources */,
@@ -500,6 +525,7 @@
 				35E8886325A8A8DE0052B677 /* PlayButton.swift in Sources */,
 				893E932325BB2556004C87D6 /* SearchBarView.swift in Sources */,
 				89D1552625BC9DEE00D84798 /* SearchViewModel.swift in Sources */,
+				89F854F025C87CDB0074B735 /* ComingSoonViewModel.swift in Sources */,
 				89E15C7625B1F7EB00FA1BAD /* TrailerList.swift in Sources */,
 				89AAC34025B0FD61003245FE /* CustomTabSwitch.swift in Sources */,
 				89BF052C25B8CD940061596A /* HomeStack.swift in Sources */,
