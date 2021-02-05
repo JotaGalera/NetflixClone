@@ -81,7 +81,9 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
                           episodes: exampleEpisodes,
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "darkPreview",
+                          previewVideoURL:exampleVideoURL)
 let exampleMovie2 = Movie(id: UUID().uuidString, name: "Travelers",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
                           categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
@@ -90,9 +92,10 @@ let exampleMovie2 = Movie(id: UUID().uuidString, name: "Travelers",
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          
                           promotionalHeadling: "Best Rated Show",
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "ozarkPreview",
+                          previewVideoURL:exampleVideoURL)
 let exampleMovie3 = Movie(id: UUID().uuidString,
                           name: "Community", thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
                           categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
@@ -103,8 +106,9 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "dirtyJohnPreview",
+                          previewVideoURL:exampleVideoURL)
 let exampleMovie4 = Movie(id: UUID().uuidString, name: "Alone",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
                           categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
@@ -115,9 +119,10 @@ let exampleMovie4 = Movie(id: UUID().uuidString, name: "Alone",
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          
                           promotionalHeadling: "New episodes coming soon",
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "travelersPreview",
+                          previewVideoURL:exampleVideoURL)
 let exampleMovie5 = Movie(id: UUID().uuidString,
                           name: "Hannibal",
                           thumbnailURL: URL(string: "https://picsum.photos/200/303")!,
@@ -130,8 +135,9 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "arrestedDevPreview",
+                          previewVideoURL:exampleVideoURL)
 let exampleMovie6 = Movie(id: UUID().uuidString,
                           name: "After Life",
                           thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
@@ -144,9 +150,10 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                          
                           promotionalHeadling: "Watch Season 6 Now",
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "whiteLinesPreview",
+                          previewVideoURL:exampleVideoURL)
 
 let exampleMovie7 = Movie(id: UUID().uuidString,
                           name: "DARK", thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
@@ -156,8 +163,9 @@ let exampleMovie7 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisode1, creator: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
                           moreLikeThisMovies: [],
-                         
-                          trailers: exampleTrailers)
+                          trailers: exampleTrailers,
+                          previewImageName: "ozarPreview",
+                          previewVideoURL:exampleVideoURL)
 
 let exampleEpisode1 = CurrentEpisodeInfo(episodeName: "First Episode", description: "In the aftermath of a child's disappearance, Dark follows characters from the fictional German town of Winden as they pursue the truth. They follow connections between four estranged families to unravel a sinister time travel conspiracy which spans several generations.", season: 1, episode: 1)
 

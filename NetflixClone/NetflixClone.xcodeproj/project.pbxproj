@@ -84,6 +84,8 @@
 		89F854FD25C87F660074B735 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F854F825C87E430074B735 /* TrackableScrollView.swift */; };
 		89F8550325C88C880074B735 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F8550225C88C880074B735 /* DownloadView.swift */; };
 		89F8550A25C88C8D0074B735 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F8550225C88C880074B735 /* DownloadView.swift */; };
+		89FA60D825CD4C8400645922 /* MoviePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */; };
+		89FA60D925CD4C8400645922 /* MoviePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +131,7 @@
 		89F854EF25C87CDA0074B735 /* ComingSoonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewModel.swift; sourceTree = "<group>"; };
 		89F854F825C87E430074B735 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		89F8550225C88C880074B735 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +283,7 @@
 				89E15C6A25B1F5D300FA1BAD /* VideoPlayer */,
 				8904670825AE4594005CE073 /* Details */,
 				3584B30125A87D6400CFB1BF /* Home */,
+				89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,6 +465,7 @@
 				89D1553725BCA1F900D84798 /* GenerateMovies.swift in Sources */,
 				3584B2FC25A87ADA00CFB1BF /* GlobalHelper.swift in Sources */,
 				3584B28525A870D000CFB1BF /* ContentView.swift in Sources */,
+				89FA60D825CD4C8400645922 /* MoviePreviewCell.swift in Sources */,
 				3584B30325A87D7000CFB1BF /* HomeViewModel.swift in Sources */,
 				89D1552A25BC9DF100D84798 /* SearchView.swift in Sources */,
 				89B8A63B25B3595700810FD1 /* EpisodesView.swift in Sources */,
@@ -502,6 +507,7 @@
 				89D1553325BCA16300D84798 /* GenerateMovies.swift in Sources */,
 				3584B2FD25A87ADA00CFB1BF /* GlobalHelper.swift in Sources */,
 				3584B29625A8738300CFB1BF /* ContentView.swift in Sources */,
+				89FA60D925CD4C8400645922 /* MoviePreviewCell.swift in Sources */,
 				3584B30425A87D7000CFB1BF /* HomeViewModel.swift in Sources */,
 				89D1552125BC9DBF00D84798 /* SearchView.swift in Sources */,
 				89B8A63725B3595500810FD1 /* EpisodesView.swift in Sources */,
