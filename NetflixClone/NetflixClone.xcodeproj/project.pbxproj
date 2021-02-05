@@ -97,6 +97,8 @@
 		89FA60FB25CD7DB400645922 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60F925CD7DB400645922 /* PreviewView.swift */; };
 		89FA610325CD7F4900645922 /* PreviewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA610225CD7F4900645922 /* PreviewVM.swift */; };
 		89FA610425CD7F4900645922 /* PreviewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA610225CD7F4900645922 /* PreviewVM.swift */; };
+		89FA610925CD8F7400645922 /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA610825CD8F7400645922 /* PreviewList.swift */; };
+		89FA610A25CD8F7400645922 /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA610825CD8F7400645922 /* PreviewList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +150,7 @@
 		89FA60F325CD7CEB00645922 /* TrailerPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerPlayerView.swift; sourceTree = "<group>"; };
 		89FA60F925CD7DB400645922 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		89FA610225CD7F4900645922 /* PreviewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVM.swift; sourceTree = "<group>"; };
+		89FA610825CD8F7400645922 /* PreviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +358,7 @@
 				89FA60E725CD59F200645922 /* PagerView.swift */,
 				89FA60F925CD7DB400645922 /* PreviewView.swift */,
 				89FA610225CD7F4900645922 /* PreviewVM.swift */,
+				89FA610825CD8F7400645922 /* PreviewList.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -524,6 +528,7 @@
 				894B72EC25C2091E002C82F8 /* ComingSoonRow.swift in Sources */,
 				35E8886725A8A99C0052B677 /* PlayButton.swift in Sources */,
 				893E932A25BB2569004C87D6 /* SearchBarView.swift in Sources */,
+				89FA610925CD8F7400645922 /* PreviewList.swift in Sources */,
 				89D1552E25BC9DF400D84798 /* SearchViewModel.swift in Sources */,
 				89F854F425C87D4E0074B735 /* ComingSoonViewModel.swift in Sources */,
 				89E15C7525B1F7EB00FA1BAD /* TrailerList.swift in Sources */,
@@ -571,6 +576,7 @@
 				894B72E825C2091B002C82F8 /* ComingSoonRow.swift in Sources */,
 				35E8886325A8A8DE0052B677 /* PlayButton.swift in Sources */,
 				893E932325BB2556004C87D6 /* SearchBarView.swift in Sources */,
+				89FA610A25CD8F7400645922 /* PreviewList.swift in Sources */,
 				89D1552625BC9DEE00D84798 /* SearchViewModel.swift in Sources */,
 				89F854F025C87CDB0074B735 /* ComingSoonViewModel.swift in Sources */,
 				89E15C7625B1F7EB00FA1BAD /* TrailerList.swift in Sources */,
