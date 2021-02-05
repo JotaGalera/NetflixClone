@@ -88,6 +88,8 @@
 		89FA60D925CD4C8400645922 /* MoviePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */; };
 		89FA60DF25CD50BD00645922 /* MoviePreviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60DE25CD50BD00645922 /* MoviePreviewRow.swift */; };
 		89FA60E025CD50BD00645922 /* MoviePreviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60DE25CD50BD00645922 /* MoviePreviewRow.swift */; };
+		89FA60E825CD59F200645922 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60E725CD59F200645922 /* PagerView.swift */; };
+		89FA60E925CD59F200645922 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA60E725CD59F200645922 /* PagerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +137,7 @@
 		89F8550225C88C880074B735 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewCell.swift; sourceTree = "<group>"; };
 		89FA60DE25CD50BD00645922 /* MoviePreviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewRow.swift; sourceTree = "<group>"; };
+		89FA60E725CD59F200645922 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +340,7 @@
 			children = (
 				89FA60D725CD4C8400645922 /* MoviePreviewCell.swift */,
 				89FA60DE25CD50BD00645922 /* MoviePreviewRow.swift */,
+				89FA60E725CD59F200645922 /* PagerView.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -471,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D1554025BCA8D000D84798 /* PopularMovieView.swift in Sources */,
+				89FA60E825CD59F200645922 /* PagerView.swift in Sources */,
 				89AF4C2E25C2008F00E748B4 /* ComingSoonView.swift in Sources */,
 				89F8550A25C88C8D0074B735 /* DownloadView.swift in Sources */,
 				89E15C6525B1F3B600FA1BAD /* SwiftUIVideView.swift in Sources */,
@@ -514,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D1553C25BCA8BC00D84798 /* PopularMovieView.swift in Sources */,
+				89FA60E925CD59F200645922 /* PagerView.swift in Sources */,
 				89AF4C2A25C2008B00E748B4 /* ComingSoonView.swift in Sources */,
 				89F8550325C88C880074B735 /* DownloadView.swift in Sources */,
 				89E15C6625B1F3B600FA1BAD /* SwiftUIVideView.swift in Sources */,
